@@ -2,8 +2,10 @@
 
 set -euo pipefail
 
-# Upgrade pip and install dependencies
-python -m pip install --upgrade pip
+# Upgrade pip, setuptools, and wheel to ensure binary wheels can be used
+python -m pip install --upgrade pip setuptools wheel
+
+# Install Python dependencies
 pip install -r requirements.txt
 
 # Run migrations and collect static files
