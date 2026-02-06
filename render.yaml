@@ -2,7 +2,7 @@ services:
   - type: web
     name: blog-web-app
     runtime: python
-    runtimeVersion: 3.12
+    runtimeVersion: 3.11
     buildCommand: ./build.sh
     startCommand: gunicorn blog_project.wsgi:application --bind 0.0.0.0:$PORT
     envVars:
