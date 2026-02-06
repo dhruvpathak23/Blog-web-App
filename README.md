@@ -1,7 +1,7 @@
 # 📝 Django Blog Application
 
 A full-stack Django Blog Application that allows users to create, read, update, and delete blog posts with authentication support. The project follows Django’s MVT architecture and uses templates, static files, and migrations properly.
-
+**Student Project:** Built by a 8th semester student
 # 🚀 Features
 
 User authentication (register, login, logout)
