@@ -1,0 +1,16 @@
+.git
+.gitignore
+.dockerignore
+*.pyc
+__pycache__
+*.egg-info
+.env
+.venv
+venv
+db.sqlite3
+.DS_Store
+media
+staticfiles
+*.log
+.pytest_cache
+.coverage
