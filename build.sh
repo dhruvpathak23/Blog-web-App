@@ -1,10 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Install dependencies
+set -euo pipefail
+
+# Upgrade pip and install dependencies
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-# Collect static files
+# Run migrations and collect static files
+python manage.py migrate --noinput
 python manage.py collectstatic --noinput
-
-# Run migrations
-python manage.py migrate
