@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: blog-web-app
-    runtime: docker
-    envVars:
-      - key: DEBUG
-        value: false
-      - key: ALLOWED_HOSTS
-        value: blog-web-app.onrender.com
